@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0
+}
+
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.slider {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slider--width {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.3s;
+}
+
+.slider--item {
+  width: 100vw;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+  object-position: center;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:orange;
+  font-family: cursive;
+  font-size: 60px;
+  text-shadow: 0px 2px 2px #333;
+  font-weight: bold;
+}
+
+.slider--controls {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider--control {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  display: inline-flex;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #FFF;
+}
+
+footer{
+  background-color: #000;
+  color:#FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
